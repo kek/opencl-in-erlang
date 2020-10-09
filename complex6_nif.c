@@ -4,6 +4,8 @@
 extern int foo(int x);
 extern int bar(int y);
 
+#include <stdio.h>
+
 static ERL_NIF_TERM foo_nif(ErlNifEnv *env, int argc, const ERL_NIF_TERM argv[])
 {
     int x, ret;
